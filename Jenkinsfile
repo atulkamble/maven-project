@@ -11,6 +11,7 @@ pipeline {
             steps {
                 // Checkout code from SCM
                 git 'https://github.com/atulkamble/maven-project.git:main'
+                sh 'java --version'
             }
         }
 
