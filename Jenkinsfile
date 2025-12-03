@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'MyMaven' // Ensure this version is configured in Jenkins
-        jdk 'MyJDK'      // Ensure this JDK version is configured in Jenkins
+        maven 'myMaven' // Ensure this version is configured in Jenkins
+        jdk 'myJDK'      // Ensure this JDK version is configured in Jenkins
     }
     
     stages {
