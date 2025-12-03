@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from SCM
-                git ''
+                git 'https://github.com/atulkamble/maven-project.git'
             }
         }
 
@@ -40,7 +40,7 @@ pipeline {
                 // Simple deployment example
                 sh 'echo "Deploying application..."'
                 // Example of copying artifacts to a deploy location
-                sh 'cp target/basic-java-app-1.0-SNAPSHOT.jar /path/to/deploy/'
+                sh 'cp target/myproject-1.0.jar /target/*.jar'
             }
         }
     }
