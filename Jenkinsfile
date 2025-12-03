@@ -41,7 +41,9 @@ pipeline {
                 // Simple deployment example
                 sh 'echo "Deploying application..."'
                 // Example of copying artifacts to a deploy location
-                sh 'cp target/myproject-1.0.jar /target/*.jar'
+                sh 'mkdir -p deploy'
+                sh 'cp target/myproject-1.0.jar deploy/'
+                sh 'echo "Application deployed to deploy/ directory"'
             }
         }
     }
