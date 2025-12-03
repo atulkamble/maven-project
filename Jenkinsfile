@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from SCM
-                git 'https://github.com/atulkamble/maven-project.git'
+                git 'https://github.com/atulkamble/maven-project.git:main'
             }
         }
 
